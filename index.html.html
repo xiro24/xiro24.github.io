@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="background-img-port">
+	
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+	</head>
+	
+	<header>
+		<h1>SL-Portal</h1>
+	</header>
+
+	<nav>
+		<div class = "navigation">
+			<p> SL-Portal
+				<a href = "./BookMarks/bookmarks.php">BookMarked</a>
+				<a href = "./BookMarks/tools.php" >Hacking tools</a>
+				<a href = "./Recreation/AnimeMedia.php" >Anime/Media</a>
+			</p>
+		</div>
+	</nav>
+	
+	<body>
+		<main>
+			<p>
+				Hi, This is a website developed by me,
+				feel free to use it's bookmarks and the featers it has to offer
+			</p>
+			
+			<?php
+				echo "php setup required! you need to install it lol, you should probably just use javascript since  it's client side";
+			?>
+			
+			<div>
+			<p>Hat Films</p>
+				<a href="https://www.youtube.com/channel/UC7A_dLnSAjl7uROCdoNyjzg" target="_blank">
+					<img class="BookMarked-image-size" src="https://yt3.ggpht.com/-iBt4vywVetg/AAAAAAAAAAI/AAAAAAAAAAA/fbVGoOupHOU/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+				</a>
+			</div>	
+			<div>
+				<p id ="test"></p>
+			</div>
+			<div>
+				<div>
+					<img class="Slides left-Slide" src="../../Pictures/Saved Pictures/2927774.png">
+					<img class="Slides left-Slide" src="../../Pictures/Saved Pictures/2947805.png">
+					<img class="Slides left-Slide" src="../../Pictures/Saved Pictures/2947734.jpg">
+				</div>
+				<!----------------------------credit goes to w3schools start---------------------------->
+				<script>
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+						var i;
+						var x = document.getElementsByClassName("Slides");
+						for (i = 0; i < x.length; i++) {
+						   x[i].style.display = "none";  
+						}
+						myIndex++;
+						if (myIndex > x.length) {myIndex = 1}    
+						x[myIndex-1].style.display = "block";  
+						setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+				</script>
+				<!----------------------------credit goes to w3schools end ---------------------------->
+			</div>
+		</main>	
+	</body>
+	
+	
+	<script>
+		document.getElementsById("test").innerHTML = "javascript message";
+	</script>
+	
+	
+	
+	
+	<footer>
+	
+	</footer>
+
+</html>
